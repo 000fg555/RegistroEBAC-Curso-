@@ -13,6 +13,7 @@ int cadastro() //função responsável por cadastrar usuários no sistema
 	char sobrenome[40];
 	char datanasc[40];
 	char cargo[40];
+	int escolha=0;
 	//fim da criação de variáveis
 	
 	printf("\t\t\t   EBAC \n\n");
@@ -72,6 +73,27 @@ int cadastro() //função responsável por cadastrar usuários no sistema
 	printf("\n      Cadastro efetuado com sucesso! \n\n\n");
 	
 	system("pause");
+	
+	system("cls");
+	
+	printf("\t\t\t   EBAC \n\n");
+	printf("\t\t   ___Cadastro Geral___ \n\n\n");
+	printf("\t\t  Cadastro de novo aluno\n\n\n");
+	printf("\tGostaria de cadastrar mais um usuário?\n\n");
+	printf("\tDigite 1 para SIM ou digite 2 para NÃO:");
+	scanf("%d", &escolha);
+	
+	if(escolha == 1)
+	{
+		system("cls");
+		cadastro();
+	}
+	
+	if(escolha == 2)
+	{
+		printf("\n\n\t\tRetornando ao menu inicial\n\n\n\n");
+		system("pause");
+	}
 }
 
 int consulta()
