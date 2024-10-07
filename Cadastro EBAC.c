@@ -167,7 +167,8 @@ int main()
 		printf("\t\t Escolha a opção desejada\n\n"); 
 		printf("\t\t  1 - Novo cadastro\n"); // inicio do menu
 		printf("\t\t  2 - Consultar cadastro\n");
-		printf("\t\t  3 - Deletar cadastro\n\n"); // fim do menu
+		printf("\t\t  3 - Deletar cadastro\n");
+		printf("\t\t  4 - Sair do programa\n\n"); // fim do menu
 		printf("\t  Opção: ");
 	
 		scanf("%d", &escolha); //armazenando escolha do usuário
@@ -188,12 +189,19 @@ int main()
 			deleta();
 			break;
 			
+			case 4:
+			printf("\t\t\t   EBAC  \n\n");
+			printf("\t\t   ___Cadastro Geral___ \n\n\n");
+			printf("\t\t  Saindo do sistema...\n\n\n");
+			return 0;
+			break;
+			
 			default:
-				printf("\t\t\t   EBAC  \n\n");
-				printf("\t\t   ___Cadastro Geral___ \n\n\n");
-				printf("\t\t A opção escolhida não existe\n\n");
-				printf("\tPressione qualquer tecla para voltar ao menu inicial \n\n\n");
-				system("pause");
+			printf("\t\t\t   EBAC  \n\n");
+			printf("\t\t   ___Cadastro Geral___ \n\n\n");
+			printf("\t\t A opção escolhida não existe\n\n");
+			printf("\tPressione qualquer tecla para voltar ao menu inicial \n\n\n");
+			system("pause");
 			break;
 		}
 	}
